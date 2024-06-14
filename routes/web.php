@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\EmployeeInputController;
+use App\Http\Controllers\HelpController;
+use App\Http\Controllers\MonitoringController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MonitoringController::class, 'index']);
+
+Route::get('/input-karyawan', [EmployeeInputController::class, 'index'])->name("input");
+Route::post('/input-karyawan/store', [EmployeeInputController::class, 'store'])->name("input.store");
+
+Route::get('/bantuan', [HelpController::class, 'index'])->name("help");
