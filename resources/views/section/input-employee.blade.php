@@ -2,11 +2,8 @@
 
 @section('plugin')
     @vite([
-        // 'resources/css/plugin/daterangepicker.css',
-        // 'resources/js/plugin/moment.min.js',
-        // 'resources/js/plugin/daterangepicker.min.js',
-        'resources/js/plugin/select2.min.js',
         'resources/css/plugin/select2.min.css',
+        'resources/js/plugin/select2.min.js',
         'resources/js/input.js'])
 @endsection
 
@@ -46,7 +43,7 @@
                         <div class="col-md-3 mb-4">
                             <div class="form-group">
                                 <label for="tanggalMasuk">Tanggal Lahir</label>
-                                <input type="date" name="date_of_birth" class="form-control" id="tanggalMasuk">
+                                <input type="text" name="date_of_birth" class="form-control date-daterangepicker" id="tanggalMasuk">
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
@@ -70,13 +67,13 @@
                         <div class="col-md-6 mb-4">
                             <div class="form-group">
                                 <label for="tanggalMasuk">Tanggal Masuk</label>
-                                <input type="date" name="work_entry_date" class="form-control" id="tanggalMasuk">
+                                <input type="text" name="work_entry_date" class="form-control date-daterangepicker" id="tanggalMasuk">
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="form-group">
                                 <label for="tanggalKeluar">Tanggal Keluar</label>
-                                <input type="date" name="work_end_date" class="form-control" id="tanggalKeluar">
+                                <input type="text" name="work_end_date" class="form-control date-daterangepicker" id="tanggalKeluar">
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
@@ -104,7 +101,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-submit">Submit</button>
                         </div>
                     </div>
                 </form>

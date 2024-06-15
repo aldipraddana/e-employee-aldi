@@ -28,7 +28,7 @@
 .login-button:hover{
     background-color: #0d1e4e;
 }
-.btn-primary{
+.btn-submit{
     margin-top: 20px;
     font-size: 14px !important;
     padding: 8px 20px !important;
