@@ -19,6 +19,7 @@
 
 ## Preview App v.1.0.0
 ![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/a1fd58c7-0dfd-4321-b418-e4d6a9d66777)
-![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/17e03b44-ac10-4eff-8e9f-27f9684afe72)
+![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/5b3c6bb5-fd63-42de-9a0a-faad7b0b75d9)
+
 
 
