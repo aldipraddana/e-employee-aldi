@@ -14,18 +14,18 @@
             <div class="col-md-8 my-3">
 
                 @if ($message = Session::get('error'))
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-danger mb-4" role="alert">
                     {{ $message }}
                 </div>
                 @endif
 
                 @if ($message = Session::get('success'))
-                <div class="alert alert-success mb-2" role="alert">
+                <div class="alert alert-success mb-4" role="alert">
                 {{ $message }}
                 </div>
                 @endif
 
-                <form action="{{ route('input.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('input.store') }}" class="form--input-employee dropzone mt-2" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-6 mb-4">
@@ -60,9 +60,11 @@
                         </div>
                         <div class="col-md-12 mb-4">
                             <div class="form-group">
-                                <label for="dokumen">Dokumen</label><br>    
-                                <input type="file" class="form-control-file" id="dokumen">
+                                <label for="dokumen">Dokumen </label><br>    
+                                <input type="file" multiple id="dokumen" >
                             </div>
+                            <small style="color: red">*Dokumen berupa file pdf ijasah, ktp, transkrip nilai, sertifikat pembelajaran (jika ada)</small><br>
+                            <small style="color: red">*File yang di upload max. berjumlah 4 file, dan max. size tiap file 4 Mb</small>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="form-group">
@@ -72,7 +74,7 @@
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="form-group">
-                                <label for="tanggalKeluar">Tanggal Keluar</label>
+                                <label for="tanggalKeluar">Akhir Kontrak</label>
                                 <input type="text" name="work_end_date" class="form-control date-daterangepicker" id="tanggalKeluar">
                             </div>
                         </div>

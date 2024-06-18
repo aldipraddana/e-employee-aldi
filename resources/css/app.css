@@ -25,14 +25,18 @@
     text-decoration: none;
     transition: 0.3s background-color;
 }
-.login-button:hover{
+.logout-button:hover{
     background-color: #0d1e4e;
 }
 .btn-submit{
     margin-top: 20px;
     font-size: 14px !important;
     padding: 8px 20px !important;
+    border-radius: 12px;
     background-color: #1e3d92 !important;
+}
+.btn-submit:hover{
+    background-color: #0d1e4e;
 }
 .navbar-toggler{
     border: none;
@@ -49,6 +53,26 @@
 }
 .nav-link:hover, .nav-link.active { 
     color: #000;
+}
+.employee-table--datatable thead th{
+    background: #1e3d92 !important;
+    color: white !important;
+}
+.btn-primary{
+    background: #1e3d92 !important;
+}
+.form-control{
+    border: 1px solid #aaa; 
+}
+.file-caption-name{
+    height: 38px;
+    margin-top: 3px;
+    border-radius: 6px !important;
+    margin-right: 6px;
+}
+.fileinput-remove{
+    border-radius: 6px;
+    border: 1px solid #fff;
 }
 @media (min-width: 991px) {
     .nav-link::before{

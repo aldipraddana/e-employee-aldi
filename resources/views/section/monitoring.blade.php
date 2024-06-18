@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
-                    <table class="table table-striped text-center employee-table--datatable">
+                    <table class="table table-striped text-left employee-table--datatable">
                         <thead>
                             <tr>
                                 <th scope="col">No</th>
@@ -25,7 +25,7 @@
                                 <th scope="col" style="min-width: 150px">Phone Number</th>
                                 <th scope="col">Dokumen</th>
                                 <th scope="col" style="min-width: 150px">Tanggal Masuk</th>
-                                <th scope="col" style="min-width: 150px">Tanggal Keluar</th>
+                                <th scope="col" style="min-width: 150px">Akhir Kontrak</th>
                                 <th scope="col">Pekerjaan</th>
                                 <th scope="col" style="min-width: 130px">Tempat Kerja</th>
                             </tr>
@@ -33,15 +33,15 @@
                         <tbody>
                             @foreach ($employees as $key => $item)
                                 <tr>
-                                    <th scope="row">{{ $key+1 }}</th>
+                                    <th scope="row" class="text-center">{{ $key+1 }}</th>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->place_of_birth }}</td>
-                                    <td>{{ $item->date_of_birth }}</td>
+                                    <td class="text-center">{{ date('d-M-Y', strtotime($item->date_of_birth)) }}</td>
                                     <td>{{ $item->email }}</td>
-                                    <td>{{ $item->phone }}</td>
-                                    <td>-</td>
-                                    <td>{{ $item->work_entry_date }}</td>
-                                    <td>{{ $item->work_end_date }}</td>
+                                    <td class="text-center">{{ $item->phone }}</td>
+                                    <td class="text-start">-</td>
+                                    <td class="text-center">{{ date('d-M-Y', strtotime($item->work_entry_date)) }}</td>
+                                    <td class="text-center">{{ date('d-M-Y', strtotime($item->work_end_date)) }}</td>
                                     <td>{{ $item->job }}</td>
                                     <td>{{ $item->workplace }}</td>
                                 </tr>
