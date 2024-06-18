@@ -13,13 +13,20 @@
 3. Run cp .env.example .env
 4. Run php artisan key:generate
 5. Run php artisan migrate
-6. Run npm install
-7. Run php artisan serve
-8. Run npm run dev
+6. Run php artisan db:seed
+7. Run npm install
+8. Run php artisan serve
+9. Run npm run dev
 
 ## Preview App v.1.0.0
-![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/a1fd58c7-0dfd-4321-b418-e4d6a9d66777)
+
 ![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/5b3c6bb5-fd63-42de-9a0a-faad7b0b75d9)
+![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/f598aeb1-ae03-4d27-8236-559e404bfbfd)
+
+## API get employee
+http://127.0.0.1:8000/api/employees
+or
+http://127.0.0.1:8000/api/employees?name=aldi
 
 
 
