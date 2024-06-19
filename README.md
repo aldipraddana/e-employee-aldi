@@ -19,7 +19,7 @@
 9. Run npm run dev
 
 ## Preview App v.1.0.0
-![Uploading image.png…]()
+![Capture](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/45640042-4b5b-4597-8530-5800c52980af)
 ![image](https://github.com/aldipraddana/e-employee-aldi/assets/47706809/f598aeb1-ae03-4d27-8236-559e404bfbfd)
 
 ## API get employee
